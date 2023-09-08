@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 function RecipeCreate({addARecipe}) {
 
-initialRecipeState={
+const initialRecipeState={
   name: "",
   cuisine: "",
-  image: "",
+  photo: "",
   ingredients: "",
   preparation: "",
 }
@@ -41,7 +41,7 @@ initialRecipeState={
               placeholder="Name"
               required={true}
               onChange={handleChange}
-              value={postData.name} />
+              value={recipeData.name} />
             </td>
             <td>
               <input 
@@ -51,17 +51,17 @@ initialRecipeState={
               placeholder="Cuisine"
               required={true}
               onChange={handleChange}
-              value={postData.cuisine} />
+              value={recipeData.cuisine} />
             </td>
             <td>
               <input 
-              id="image" 
-              name="image" 
+              id="photo" 
+              name="photo" 
               type="url" 
               placeholder="URL"
               required={true}
               onChange={handleChange}
-              value={postData.image} />
+              value={recipeData.photo} />
             </td>
             <td>
               <textarea 

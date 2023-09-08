@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
-import RecipeData from "./RecipeData"
+import RecipeData from "./RecipeData";
+import NewRecipe from "./NewRecipe";
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
@@ -21,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
-      <RecipeList deleteARecipe= {deleteARecipe} />
-      <RecipeCreate addARecipe={addARecipe} />
+      <RecipeList deleteARecipe= {deleteARecipe} recipes ={recipes}/>
+      <RecipeCreate addARecipe={addARecipe} recipes ={recipes}/>
     </div>
   );
 }
