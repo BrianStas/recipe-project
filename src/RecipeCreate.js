@@ -29,7 +29,7 @@ const initialRecipeState={
   
 
   return (
-    <form name="create" onClick={handleSubmit}>
+    <form name="create" onSubmit={handleSubmit}>
       <table>
         <tbody>
           <tr>
@@ -86,7 +86,7 @@ const initialRecipeState={
               rows= {3} />
             </td>
             <td>
-              <button type="submit">Create</button>
+              <button type="submit" >Create</button>
             </td>
           </tr>
         </tbody>
