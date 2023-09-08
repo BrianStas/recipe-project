@@ -14,9 +14,7 @@ function NewRecipe({recipe, deleteARecipe}){
         <td className="content_td"><p>{recipe.ingredients}</p></td>
         <td className="content_td"><p>{recipe.preparation}</p></td>
         <td>
-            <button name="edit">Edit</button>
-            <button name="delete" onClick={handleDeleteButtonClicked}>Delete</button>
-            
+            <button name="delete" onClick={handleDeleteButtonClicked}>Delete</button>           
         </td>
     </tr>
     )}

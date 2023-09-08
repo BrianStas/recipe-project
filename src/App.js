@@ -13,6 +13,7 @@ function App() {
     let newRecipes = recipes.filter(recipe => recipe !== RecipeToDelete);
     setRecipes(newRecipes);
   }
+
   // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
   function addARecipe(newRecipe){
     let newRecipes = [...recipes, newRecipe];
