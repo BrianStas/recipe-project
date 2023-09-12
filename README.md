@@ -1,0 +1,1 @@
+This is a project for Thinkful to build a recipe tracking app. This program utilizes the fundamentals of React to fill out a form and implement rows to hold the recipe information. 
